@@ -1,5 +1,5 @@
 import argparse
-from src.utils import crawling_data
+from utils import crawling_data
 
 def args_parser():
     parser = argparse.ArgumentParser()
