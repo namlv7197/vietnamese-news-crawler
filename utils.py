@@ -1,6 +1,6 @@
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver import Chrome
-from src.crawler import BaoThanhNienCrawler,BaoTuoiTreCrawler,VNExpressCrawler
+from crawler import BaoThanhNienCrawler,BaoTuoiTreCrawler,VNExpressCrawler
 from confluent_kafka import Producer
 import json
 
