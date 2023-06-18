@@ -91,7 +91,7 @@ class BaoThanhNienCrawler(Crawler):
                 load_more=self.driver.find_element(By.CSS_SELECTOR,"a[class='view-more btn-viewmore']")
                 actions.click(load_more).perform()
             except:
-                target=self.driver.find_element(By.CSS_SELECTOR,"div[class='section__muasam']")
+                target=self.driver.find_element(By.CSS_SELECTOR,"div[class='footer']")
                 actions.drag_and_drop(list_news[-1], target).perform()
 
 
@@ -137,13 +137,14 @@ class BaoTuoiTreCrawler(Crawler):
                     self.driver.get(link)
                     
                     data.update(self.extract_info())
-                    self.driver.close()
+                    print(data['link'])
                     
                     value=json.dumps(data)
                     self.producer.produce(topic,value=value)
                     self.producer.flush()
                 except:pass
                 
+                self.driver.close()
                 self.driver.switch_to.window(self.driver.window_handles[0])
             
             actions=ActionChains(self.driver)
@@ -153,7 +154,7 @@ class BaoTuoiTreCrawler(Crawler):
                 actions.click(load_more).perform()
             except:
                 target=self.driver.find_element(By.CSS_SELECTOR,"div[class='section__muasam']")
-                actions.drag_and_drop(list_news[-1], target).perform()
+                actions.drag_and_drop(news, target).perform()
     
 class VNExpressCrawler(Crawler):
     def __init__(self,driver,producer):
