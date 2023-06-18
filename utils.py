@@ -25,6 +25,7 @@ def prepare(args):
     options.add_argument('--disable-dev-shm-usage')
 
     driver=Chrome(chrome_options=options,executable_path='chromedriver')
+    driver.set_page_load_timeout(86400)
 
     producer = Producer({'bootstrap.servers': '54.179.7.184:9092,54.151.183.113:9092,54.254.228.131:9092'})
 
