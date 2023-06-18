@@ -17,10 +17,7 @@ If an error occurs during installation ```dpkg -i google-chrome-stable_current_a
 sudo apt --fix-broken install -y
 ```
 ```
-sudo apt update && apt install -y \
-  git \
-  python3-pip \ 
-  zip
+sudo apt update && apt install -y git python3-pip zip
 ```
 ## Download and install Google Chrome
 ```
