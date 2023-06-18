@@ -16,16 +16,6 @@ If an error occurs during installation ```dpkg -i google-chrome-stable_current_a
 ```
 sudo apt --fix-broken install -y
 ```
-## Install python virtual environment
-```
-sudo apt update && apt install -y git zip python3-venv
-```
-## Create python virtual environment
-```
-mkdir python3_venvs
-python3 -m venv python3_venvs/vietnamese-news-crawler
-source /home/ubuntu/python3_venvs/vietnamese-news-crawler/bin/activate
-```
 ## Clone git repository
 ```
 git clone https://github.com/namlv7197/vietnamese-news-crawler.git
@@ -36,6 +26,17 @@ git clone https://github.com/namlv7197/vietnamese-news-crawler.git
 cd vietnamese-news-crawler
 wget https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip -d chromedriver
+```
+## Install python virtual environment
+```
+sudo apt update && apt install -y git zip python3-venv
+```
+## Create python virtual environment
+```
+mkdir /home/ubuntu/python3_venvs
+python3 -m venv /home/ubuntu/python3_venvs/vietnamese-news-crawler
+source /home/ubuntu/python3_venvs/vietnamese-news-crawler/bin/activate
+pip install -r requirements.txt
 ```
 
 
