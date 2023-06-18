@@ -24,7 +24,7 @@ git clone https://github.com/namlv7197/vietnamese-news-crawler.git
 ```
 ## Install python virtual environment
 ```
-sudo apt update && apt install -y git zip python3-venv
+sudo apt update && apt install -y zip python3-venv
 ```
 ## Create python virtual environment
 ```
