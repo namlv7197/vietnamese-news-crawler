@@ -19,14 +19,14 @@ NEWS_CLASS={
 def prepare(args):
     options=Options()
     options.add_experimental_option('detach',True)
-    options.add_argument('headless')
+    # options.add_argument('headless')
     options.add_argument('start-maximized')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
 
     driver=Chrome(chrome_options=options,executable_path='chromedriver')
 
-    producer = Producer({'bootstrap.servers': 'localhost:9092'})
+    producer = Producer({'bootstrap.servers': '54.179.7.184:9092,54.151.183.113:9092,54.254.228.131:9092'})
 
     try:
         crawler=NEWS_CLASS[args.news](driver,producer)
