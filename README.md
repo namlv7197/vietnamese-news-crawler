@@ -20,22 +20,24 @@ sudo apt --fix-broken install -y
 ```
 git clone https://github.com/namlv7197/vietnamese-news-crawler.git
 ```
-
-## Download Chrome driver
-```
-cd vietnamese-news-crawler
-wget https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_linux64.zip
-unzip chromedriver_linux64.zip -d chromedriver
-```
 ## Install python virtual environment
 ```
 sudo apt update && apt install -y git zip python3-venv
 ```
 ## Create python virtual environment
 ```
-mkdir /home/ubuntu/python3_venvs
-python3 -m venv /home/ubuntu/python3_venvs/vietnamese-news-crawler
+mkdir python3_venvs
+python3 -m venv python3_venvs/vietnamese-news-crawler
 source /home/ubuntu/python3_venvs/vietnamese-news-crawler/bin/activate
+```
+## Download Chrome driver
+```
+cd vietnamese-news-crawler
+wget https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip -d chromedriver
+```
+## Install python libraries
+```
 pip install -r requirements.txt
 ```
 
