@@ -18,7 +18,7 @@ sudo apt --fix-broken install -y
 ```
 ## Install python virtual environment
 ```
-sudo apt update && apt install -y git python3-pip zip
+sudo apt update && apt install -y git zip python3-venv
 ```
 ## Create python virtual environment
 ```
