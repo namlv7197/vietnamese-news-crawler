@@ -33,9 +33,9 @@ git clone https://github.com/namlv7197/vietnamese-news-crawler.git
 
 ## Download Chrome driver
 ```
-  cd vietnamese-news-crawler && \
-  wget https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_linux64.zip && \
-  unzip chromedriver_linux64.zip -d chromedriver
+cd vietnamese-news-crawler
+wget https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip -d chromedriver
 ```
 
 
