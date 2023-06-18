@@ -4,7 +4,7 @@ Author: Le Viet Nam
 
 ## Install prerequisites
 ```
-  sudo apt-get update && apt-get install -y \
+sudo apt-get update && apt-get install -y \
   fonts-liberation \
   libasound2 \
   libatk-bridge2.0-0 \
@@ -30,4 +30,21 @@ Author: Le Viet Nam
   libcurl3-nss \
   libcurl4 \ 
   wget
+```
+```
+sudo apt update && apt install -y \
+  git \
+  python3-pip \ 
+  zip
+```
+## Download and install Google Chrome
+```
+  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
+  dpkg -i google-chrome-stable_current_amd64.deb && \
+  rm google-chrome-stable_current_amd64.deb
+```
+
+## Clone git repository
+```
+git clone https://github.com/namlv7197/vietnamese-news-crawler.git
 ```
