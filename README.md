@@ -8,6 +8,7 @@ Author: Le Viet Nam
 
 ## Install prerequisites
 ```
+cd /home/ubuntu
 sudo apt-get update && apt-get install -y \
   fonts-liberation \
   libasound2 \
