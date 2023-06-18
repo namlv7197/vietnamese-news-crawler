@@ -1,4 +1,8 @@
 # vietnamese-news-crawler
+Build Vietnamese news crawler service running on AWS
+
+Websites:
+- [Bao tuoi tre](https://tuoitre.vn/tin-moi-nhat.htm)
 
 Author: Le Viet Nam
 
