@@ -35,7 +35,7 @@ source /home/ubuntu/python3_venvs/vietnamese-news-crawler/bin/activate
 ## Download Chrome driver
 ```
 cd vietnamese-news-crawler
-wget https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_linux64.zip
+wget https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip -d chromedriver
 ```
 ## Install python libraries
