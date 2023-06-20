@@ -27,7 +27,7 @@ def prepare(args):
     driver=Chrome(chrome_options=options,executable_path='chromedriver')
     driver.set_page_load_timeout(86400)
 
-    producer = Producer({'bootstrap.servers': '54.179.7.184:9092,54.151.183.113:9092,54.254.228.131:9092'})
+    producer = Producer({'bootstrap.servers': '54.255.215.10:9092,13.212.251.13:9092,13.212.207.232:9092'})
 
     try:
         crawler=NEWS_CLASS[args.news](driver,producer)
