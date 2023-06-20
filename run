@@ -1,0 +1,3 @@
+#!/bin/bash
+source /home/ubuntu/python3_venvs/vietnamese-news-crawler/bin/activate
+python3 main --news bao_tuoi_tre --topic bao_tuoi_tre_topic
